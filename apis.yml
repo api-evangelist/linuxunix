@@ -1,160 +1,40 @@
+aid: linuxunix
 name: Linux/Unix System APIs
-description: A collection of system-level APIs and interfaces available in Linux/Unix operating systems
-image: https://www.kernel.org/theme/images/logos/tux.png
-created: 2024-01-15 00:00:00+00:00
-modified: 2024-01-15 00:00:00+00:00
-specificationVersion: '0.16'
-url: https://example.com/apis.json
+description: >-
+  A collection of system-level APIs and interfaces available in Linux/Unix
+  operating systems, including kernel system calls, POSIX standards, and
+  inter-process communication mechanisms.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- linux
-- unix
-- system
-- kernel
-- operating system
+  - Linux
+  - Unix
+  - System
+  - Kernel
+  - Operating System
+url: https://raw.githubusercontent.com/api-evangelist/linuxunix/refs/heads/main/apis.yml
+created: '2024-01-15'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis:
-- name: System Calls API
-  description: Low-level interface between user space applications and the Linux kernel
-  image: https://www.kernel.org/theme/images/logos/tux.png
-  humanURL: https://man7.org/linux/man-pages/man2/syscalls.2.html
-  baseURL: N/A (kernel interface)
-  tags:
-  - syscalls
-  - kernel
-  - low-level
-  properties:
-  - type: Documentation
-    url: https://man7.org/linux/man-pages/dir_section_2.html
-  - type: X-Source
-    url: https://github.com/torvalds/linux
-  - type: X-Reference
-    url: https://www.kernel.org/doc/html/latest/
-- name: POSIX API
-  description: Portable Operating System Interface standards for Unix-like systems
-  humanURL: https://pubs.opengroup.org/onlinepubs/9699919799/
-  baseURL: N/A (system library)
-  tags:
-  - posix
-  - standards
-  - portability
-  properties:
-  - type: Documentation
-    url: https://pubs.opengroup.org/onlinepubs/9699919799/
-  - type: Specification
-    url: https://standards.ieee.org/ieee/1003.1/7101/
-  - type: X-Man-Pages
-    url: https://man7.org/linux/man-pages/
-- name: D-Bus API
-  description: Inter-process communication (IPC) and remote procedure call mechanism
-  humanURL: https://www.freedesktop.org/wiki/Software/dbus/
-  baseURL: unix:path=/var/run/dbus/system_bus_socket
-  tags:
-  - ipc
-  - messaging
-  - desktop
-  properties:
-  - type: Documentation
-    url: https://dbus.freedesktop.org/doc/dbus-specification.html
-  - type: API-Specification
-    url: https://dbus.freedesktop.org/doc/dbus-api-design.html
-  - type: X-Source
-    url: https://gitlab.freedesktop.org/dbus/dbus
-- name: Netlink API
-  description: Socket-based interface for communication between kernel and user space
-  humanURL: https://man7.org/linux/man-pages/man7/netlink.7.html
-  baseURL: N/A (socket interface)
-  tags:
-  - networking
-  - kernel
-  - sockets
-  properties:
-  - type: Documentation
-    url: https://man7.org/linux/man-pages/man7/netlink.7.html
-  - type: X-Tutorial
-    url: https://www.kernel.org/doc/html/latest/userspace-api/netlink/intro.html
-- name: procfs API
-  description: Virtual filesystem providing process and system information
-  humanURL: https://man7.org/linux/man-pages/man5/proc.5.html
-  baseURL: /proc
-  tags:
-  - filesystem
-  - process
-  - monitoring
-  properties:
-  - type: Documentation
-    url: https://man7.org/linux/man-pages/man5/proc.5.html
-  - type: X-Kernel-Docs
-    url: https://www.kernel.org/doc/html/latest/filesystems/proc.html
-- name: sysfs API
-  description: Virtual filesystem for kernel objects and device information
-  humanURL: https://man7.org/linux/man-pages/man5/sysfs.5.html
-  baseURL: /sys
-  tags:
-  - filesystem
-  - kernel
-  - devices
-  properties:
-  - type: Documentation
-    url: https://man7.org/linux/man-pages/man5/sysfs.5.html
-  - type: X-Kernel-Docs
-    url: https://www.kernel.org/doc/html/latest/filesystems/sysfs.html
-- name: inotify API
-  description: Linux kernel subsystem for monitoring filesystem events
-  humanURL: https://man7.org/linux/man-pages/man7/inotify.7.html
-  baseURL: N/A (kernel interface)
-  tags:
-  - filesystem
-  - monitoring
-  - events
-  properties:
-  - type: Documentation
-    url: https://man7.org/linux/man-pages/man7/inotify.7.html
-  - type: X-Tutorial
-    url: https://www.kernel.org/doc/html/latest/filesystems/inotify.html
-- name: epoll API
-  description: I/O event notification facility for scalable event monitoring
-  humanURL: https://man7.org/linux/man-pages/man7/epoll.7.html
-  baseURL: N/A (kernel interface)
-  tags:
-  - io
-  - events
-  - performance
-  properties:
-  - type: Documentation
-    url: https://man7.org/linux/man-pages/man7/epoll.7.html
-  - type: X-Examples
-    url: https://man7.org/linux/man-pages/man7/epoll.7.html#EXAMPLES
-- name: udev API
-  description: Device manager for the Linux kernel handling device nodes in /dev
-  humanURL: https://www.freedesktop.org/software/systemd/man/udev.html
-  baseURL: N/A (system service)
-  tags:
-  - devices
-  - hardware
-  - hotplug
-  properties:
-  - type: Documentation
-    url: https://www.freedesktop.org/software/systemd/man/udev.html
-  - type: X-Source
-    url: https://github.com/systemd/systemd/tree/main/src/udev
-- name: systemd API
-  description: System and service manager with D-Bus interface
-  humanURL: https://www.freedesktop.org/wiki/Software/systemd/
-  baseURL: N/A (system service)
-  tags:
-  - init
-  - service-management
-  - system
-  properties:
-  - type: Documentation
-    url: https://www.freedesktop.org/software/systemd/man/
-  - type: API-Documentation
-    url: https://www.freedesktop.org/wiki/Software/systemd/dbus/
-  - type: X-Source
-    url: https://github.com/systemd/systemd
+  - aid: linuxunix:system-calls-api
+    name: System Calls API
+    description: Low-level interface between user space applications and the Linux kernel.
+    humanURL: https://man7.org/linux/man-pages/man2/syscalls.2.html
+    tags:
+      - Syscalls
+      - Kernel
+      - Low-level
+    properties:
+      - type: Documentation
+        url: https://man7.org/linux/man-pages/dir_section_2.html
+common:
+  - url: https://www.kernel.org/
+    type: Website
+  - url: https://www.kernel.org/doc/html/latest/
+    type: Documentation
+  - url: https://man7.org/linux/man-pages/
+    type: Reference
 maintainers:
-- name: Linux Kernel Team
-  email: torvalds@linux-foundation.org
-  url: https://www.kernel.org
-- name: The Open Group (POSIX)
-  url: https://www.opengroup.org
-include: []
+  - FN: Kin Lane
+    email: kin@apievangelist.com
