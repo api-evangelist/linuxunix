@@ -1,5 +1,5 @@
 aid: linuxunix
-name: Linux/Unix System APIs
+name: Linux/Unix System
 description: >-
   A collection of system-level APIs and interfaces available in Linux/Unix
   operating systems, including kernel system calls, POSIX standards, and
