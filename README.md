@@ -1,176 +1,146 @@
-# Linux/Unix System APIs (linuxunix)
-A collection of system-level APIs and interfaces available in Linux/Unix operating systems
+# Linux/Unix System (linuxunix)
+A topic catalog of system-level APIs and interfaces available across Linux/Unix-like operating systems. Includes kernel system calls, POSIX standards, inter-process communication mechanisms (D-Bus, Netlink), virtual filesystems (procfs, sysfs), event-notification facilities (epoll, inotify), device management (udev, systemd), and userspace security interfaces.
 
-**URL:** [Visit APIs.json URL](https://example.com/apis.json)
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/linuxunix/refs/heads/main/apis.yml)
+
+## Scope
+- **Type:** Topic
+- **Position:** Consumer
+- **Access:** 3rd-Party
 
 ## Tags:
-
- - linux, unix, system, kernel, operating system
+ - Kernel, Linux, Operating System, System, Unix, POSIX
 
 ## Timestamps
-
-- **Created:** 2024-01-15 00:00:00+00:00 
-- **Modified:** 2024-01-15 00:00:00+00:00 
+- **Created:** 2024-01-15
+- **Modified:** 2026-04-28
 
 ## APIs
 
 ### System Calls API
-Low-level interface between user space applications and the Linux kernel
+Low-level interface between user-space applications and the Linux kernel providing access to process management, file I/O, memory, networking, signals, and IPC primitives.
 
 **Human URL:** [https://man7.org/linux/man-pages/man2/syscalls.2.html](https://man7.org/linux/man-pages/man2/syscalls.2.html)
 
-
 #### Tags:
-
- - syscalls, kernel, low-level
+ - Kernel, Low-Level, Syscalls
 
 #### Properties
-
 - [Documentation](https://man7.org/linux/man-pages/dir_section_2.html)
-- [X-Source](https://github.com/torvalds/linux)
-- [X-Reference](https://www.kernel.org/doc/html/latest/)
+- [Reference](https://www.kernel.org/doc/html/latest/userspace-api/index.html)
 
 ### POSIX API
-Portable Operating System Interface standards for Unix-like systems
+Portable Operating System Interface standards for Unix-like systems, defining a consistent application programming interface across platforms.
 
 **Human URL:** [https://pubs.opengroup.org/onlinepubs/9699919799/](https://pubs.opengroup.org/onlinepubs/9699919799/)
 
-
 #### Tags:
-
- - posix, standards, portability
+ - POSIX, Standards, Portability
 
 #### Properties
-
 - [Documentation](https://pubs.opengroup.org/onlinepubs/9699919799/)
 - [Specification](https://standards.ieee.org/ieee/1003.1/7101/)
-- [X-Man-Pages](https://man7.org/linux/man-pages/)
 
 ### D-Bus API
-Inter-process communication (IPC) and remote procedure call mechanism
+Inter-process communication and remote procedure call mechanism widely used on Linux desktop and system services.
 
 **Human URL:** [https://www.freedesktop.org/wiki/Software/dbus/](https://www.freedesktop.org/wiki/Software/dbus/)
 
-
 #### Tags:
-
- - ipc, messaging, desktop
+ - IPC, Messaging, Desktop
 
 #### Properties
-
 - [Documentation](https://dbus.freedesktop.org/doc/dbus-specification.html)
-- [API-Specification](https://dbus.freedesktop.org/doc/dbus-api-design.html)
-- [X-Source](https://gitlab.freedesktop.org/dbus/dbus)
+- [Source Code](https://gitlab.freedesktop.org/dbus/dbus)
 
 ### Netlink API
-Socket-based interface for communication between kernel and user space
+Socket-based interface for communication between the kernel and user space, particularly for networking and device subsystems.
 
 **Human URL:** [https://man7.org/linux/man-pages/man7/netlink.7.html](https://man7.org/linux/man-pages/man7/netlink.7.html)
 
-
 #### Tags:
-
- - networking, kernel, sockets
+ - Networking, Kernel, Sockets
 
 #### Properties
-
 - [Documentation](https://man7.org/linux/man-pages/man7/netlink.7.html)
-- [X-Tutorial](https://www.kernel.org/doc/html/latest/userspace-api/netlink/intro.html)
+- [Reference](https://www.kernel.org/doc/html/latest/userspace-api/netlink/intro.html)
 
 ### procfs API
-Virtual filesystem providing process and system information
+Virtual filesystem providing process and system information through a hierarchical file-based interface.
 
 **Human URL:** [https://man7.org/linux/man-pages/man5/proc.5.html](https://man7.org/linux/man-pages/man5/proc.5.html)
 
-
 #### Tags:
-
- - filesystem, process, monitoring
+ - Filesystem, Process, Monitoring
 
 #### Properties
-
 - [Documentation](https://man7.org/linux/man-pages/man5/proc.5.html)
-- [X-Kernel-Docs](https://www.kernel.org/doc/html/latest/filesystems/proc.html)
+- [Reference](https://www.kernel.org/doc/html/latest/filesystems/proc.html)
 
 ### sysfs API
-Virtual filesystem for kernel objects and device information
+Virtual filesystem for kernel objects and device information presented under /sys.
 
 **Human URL:** [https://man7.org/linux/man-pages/man5/sysfs.5.html](https://man7.org/linux/man-pages/man5/sysfs.5.html)
 
-
 #### Tags:
-
- - filesystem, kernel, devices
+ - Filesystem, Kernel, Devices
 
 #### Properties
-
 - [Documentation](https://man7.org/linux/man-pages/man5/sysfs.5.html)
-- [X-Kernel-Docs](https://www.kernel.org/doc/html/latest/filesystems/sysfs.html)
+- [Reference](https://www.kernel.org/doc/html/latest/filesystems/sysfs.html)
 
 ### inotify API
-Linux kernel subsystem for monitoring filesystem events
+Linux kernel subsystem for monitoring filesystem events such as file creation, deletion, and modification.
 
 **Human URL:** [https://man7.org/linux/man-pages/man7/inotify.7.html](https://man7.org/linux/man-pages/man7/inotify.7.html)
 
-
 #### Tags:
-
- - filesystem, monitoring, events
+ - Filesystem, Monitoring, Events
 
 #### Properties
-
 - [Documentation](https://man7.org/linux/man-pages/man7/inotify.7.html)
-- [X-Tutorial](https://www.kernel.org/doc/html/latest/filesystems/inotify.html)
 
 ### epoll API
-I/O event notification facility for scalable event monitoring
+I/O event notification facility for scalable monitoring of large numbers of file descriptors.
 
 **Human URL:** [https://man7.org/linux/man-pages/man7/epoll.7.html](https://man7.org/linux/man-pages/man7/epoll.7.html)
 
-
 #### Tags:
-
- - io, events, performance
+ - I/O, Events, Performance
 
 #### Properties
-
 - [Documentation](https://man7.org/linux/man-pages/man7/epoll.7.html)
-- [X-Examples](https://man7.org/linux/man-pages/man7/epoll.7.html#EXAMPLES)
 
 ### udev API
-Device manager for the Linux kernel handling device nodes in /dev
+Device manager for the Linux kernel handling device nodes and hotplug events in /dev.
 
 **Human URL:** [https://www.freedesktop.org/software/systemd/man/udev.html](https://www.freedesktop.org/software/systemd/man/udev.html)
 
-
 #### Tags:
-
- - devices, hardware, hotplug
+ - Devices, Hardware, Hotplug
 
 #### Properties
-
 - [Documentation](https://www.freedesktop.org/software/systemd/man/udev.html)
-- [X-Source](https://github.com/systemd/systemd/tree/main/src/udev)
+- [Source Code](https://github.com/systemd/systemd/tree/main/src/udev)
 
 ### systemd API
-System and service manager with D-Bus interface
+System and service manager exposing a D-Bus interface for managing services, sockets, devices, mounts, and timers.
 
 **Human URL:** [https://www.freedesktop.org/wiki/Software/systemd/](https://www.freedesktop.org/wiki/Software/systemd/)
 
-
 #### Tags:
-
- - init, service-management, system
+ - Init, Service Management, System
 
 #### Properties
-
 - [Documentation](https://www.freedesktop.org/software/systemd/man/)
-- [API-Documentation](https://www.freedesktop.org/wiki/Software/systemd/dbus/)
-- [X-Source](https://github.com/systemd/systemd)
+- [Reference](https://www.freedesktop.org/wiki/Software/systemd/dbus/)
+- [Source Code](https://github.com/systemd/systemd)
+
+## Common Properties
+- [Kernel.org](https://www.kernel.org/)
+- [Linux Kernel Documentation](https://www.kernel.org/doc/html/latest/)
+- [Linux man-pages](https://man7.org/linux/man-pages/)
 
 ## Maintainers
-
-**FN:** Linux Kernel Team
-
-**Email:** torvalds@linux-foundation.org
-**FN:** The Open Group (POSIX)
+**FN:** Kin Lane
+**Email:** kin@apievangelist.com
