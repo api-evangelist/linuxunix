@@ -6,7 +6,7 @@ description: >-
   standards, inter-process communication mechanisms (D-Bus, Netlink), virtual
   filesystems (procfs, sysfs), event-notification facilities (epoll, inotify),
   device management (udev, systemd), and userspace security interfaces.
-type: Topic
+kind: topic
 position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
