@@ -172,6 +172,8 @@ apis:
       - type: SourceCode
         url: https://github.com/systemd/systemd
 common:
+  - type: DomainSecurity
+    url: security/linuxunix-domain-security.yml
   - type: Website
     name: Kernel.org
     description: Home of the Linux kernel project.
