@@ -184,6 +184,19 @@ apis:
       - type: SourceCode
         url: https://github.com/systemd/systemd
 common:
+  - type: IssueTracker
+    url: https://github.com/systemd/systemd/issues
+  - type: Releases
+    url: https://github.com/systemd/systemd/releases
+  - type: SecurityPolicy
+    url: https://github.com/systemd/systemd/blob/main/docs/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/systemd/systemd/blob/main/docs/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/systemd/systemd/blob/main/docs/CONTRIBUTING.md
+  - type: License
+    name: GPL-2.0
+    url: https://github.com/systemd/systemd/blob/main/LICENSE
   - type: DomainSecurity
     url: security/linuxunix-domain-security.yml
   - type: Website
