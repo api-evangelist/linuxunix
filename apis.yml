@@ -103,6 +103,10 @@ apis:
     humanURL: https://man7.org/linux/man-pages/man5/proc.5.html
     tags:
       - Filesystem
+      - Processes
+      - Monitoring
+    tags_raw:
+      - Filesystem
       - Process
       - Monitoring
     properties:
@@ -134,6 +138,10 @@ apis:
     tags:
       - Filesystem
       - Monitoring
+      - Event
+    tags_raw:
+      - Filesystem
+      - Monitoring
       - Events
     properties:
       - type: Documentation
@@ -145,6 +153,10 @@ apis:
       of file descriptors.
     humanURL: https://man7.org/linux/man-pages/man7/epoll.7.html
     tags:
+      - IO
+      - Event
+      - Performance
+    tags_raw:
       - I/O
       - Events
       - Performance
