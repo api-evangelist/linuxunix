@@ -43,7 +43,7 @@ tags:
   - POSIX
 url: https://raw.githubusercontent.com/api-evangelist/linuxunix/refs/heads/main/apis.yml
 created: '2024-01-15'
-modified: '2026-04-28'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: linuxunix:system-calls-api
@@ -208,6 +208,8 @@ apis:
       - type: SourceCode
         url: https://github.com/systemd/systemd
 common:
+  - url: https://www.kernel.org/feeds/all.atom.xml
+    type: BlogRSS
   - type: IssueTracker
     url: https://github.com/systemd/systemd/issues
   - type: Releases
